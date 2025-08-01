@@ -1,0 +1,95 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Title */
+h2 {
+  margin-top: 40px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Auth & Upload sections */
+#auth-section,
+#upload-section {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+/* File List */
+ul#fileList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+ul#fileList li {
+  background: #f0f4f8;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul#fileList li button {
+  background-color: #e74c3c;
+  margin-left: 10px;
+}
+
+ul#fileList li button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  #auth-section,
+  #upload-section {
+    width: 95%;
+  }
+}

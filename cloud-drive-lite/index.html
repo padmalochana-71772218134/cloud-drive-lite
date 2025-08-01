@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloud Drive Lite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Cloud Drive Lite</h2>
+
+  <div id="auth-section">
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="signIn()">Sign In</button>
+  </div>
+
+  <div id="upload-section" style="display: none;">
+    <p>Welcome, <span id="user-email"></span></p>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Upload File</button>
+    <button onclick="listFiles()">Show Files</button>
+    <ul id="fileList"></ul>
+    <button onclick="signOut()">Sign Out</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
